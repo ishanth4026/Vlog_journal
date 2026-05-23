@@ -17,3 +17,32 @@ We can define a state by using
 
 var name - remember mutableStateOf(value : 0)
 
+# Room DB
+
+1. @Entity - Basically a table that will organize the info into columns
+2. @Dao - It is a component that takes the info from @Entity and performs functions like insert, delete, query
+3. @Database - The component that holds the info
+
+#### @Entity
+Create a data class file
+
+Syntax
+`@Entity
+data class <-name->(
+	@PrimaryKey()
+	val <-nameofield->:type 
+)`
+
+#### @Dao
+create a interface file
+
+Syntax
+
+`@Dao
+interface <-name->{
+	all the functions list
+}`
+
+eg - `@Upsert
+	`fun insertcontact(contact:<-entityname->)
+- Use Suspend before the fun for non output functions like insert and delete, it will block the flow until the function is completed.

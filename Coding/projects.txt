@@ -1,0 +1,4 @@
+1)a python programe to find the oerfect numbers(when the number's divisers add up to the number itself)
+2)money traking app
+3)a gps device for emergencies
+4)
